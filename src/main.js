@@ -1,12 +1,15 @@
-import Vue from 'vue'
-import App from './App'
-import './uni.promisify.adaptor'
+import Vue from 'vue';
+import App from './App';
+import './uni.promisify.adaptor';
 
-Vue.config.productionTip = false
+//引入并使用uView的JS库
+import uView from 'uview-ui';
+Vue.use(uView);
+Vue.config.productionTip = false;
 
-App.mpType = 'app'
+App.mpType = 'app';
 
 const app = new Vue({
   ...App
-})
-app.$mount()
+});
+app.$mount();
